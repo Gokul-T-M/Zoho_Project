@@ -121,16 +121,12 @@ public class VendorManager {
 	{
 		for(Vendor v:vendorlist)
 		{
-			//System.out.println("Bill No: "+v.getBillNo());
-			//double totalBalance=0;
 			
 			System.out.print("vendor name: "+v.getName());
 			System.out.println();
 			
 			for(Bill b:v.getBills())
 			{
-				//totalBalance+=(b.getAmt()-b.getamtPaid());
-				
 				System.out.println("Bill No: "+b.getBillNo());
 				System.out.println("balance amount: "+(b.getBalance()));
 				System.out.println();
