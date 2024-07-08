@@ -42,7 +42,7 @@ public class VendorApp {
             	System.out.println("please enter a integer");
             }
             
-            sc.nextLine();//consume newline,why?
+            sc.nextLine();
             
             
             switch(val)
@@ -65,7 +65,7 @@ public class VendorApp {
             	System.out.println("Enter amount paid: ");
             	double amtpaid=sc.nextDouble();
             	
-            	sc.nextLine();  // Consume newline,why?
+            	sc.nextLine(); 
             	
             	System.out.println("Enter date(dd-MM-yyyy)");
             	try{
