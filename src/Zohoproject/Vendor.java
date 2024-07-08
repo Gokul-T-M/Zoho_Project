@@ -15,7 +15,7 @@ public class Vendor {
 	{
 		this.bankAccountNo=accountCounter++;
 		this.name=name;
-		this.bills=new ArrayList<Bill>();//why 'this' here?
+		this.bills=new ArrayList<Bill>();
 	}
 	
 	public int getBankAccountNumber() {
@@ -28,7 +28,7 @@ public class Vendor {
 	
 	public void addBills(Bill bill)
 	{
-		bills.add(bill);//this. has also come here.check for it.
+		bills.add(bill);
 	}
 	
 	public ArrayList<Bill> getBills()
