@@ -70,7 +70,7 @@ public class BillDAO {
 		Statement st=con.createStatement();
 		
 		String s="SELECT v.vendor_name,v.bank_acct_no,b.bill_no,b.vendor_id,b.amt,b.amtpaid,b.bill_date"
-		+"FROM vendors v"
+		+" FROM vendors v"
 		+" LEFT JOIN bills b ON v.vendor_id=b.vendor_id"
 		+" WHERE b.bill_date BETWEEN str_to_date('"+start+"','%d-%m-%Y') AND str_to_date('"+end+"','%d-%m-%Y');";
 		
